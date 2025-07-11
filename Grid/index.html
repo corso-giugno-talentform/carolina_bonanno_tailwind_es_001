@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colored Grid</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-header: #5ee2ec;
+        --color-hero: #d7c5e1;
+        --color-main: #f2cc39;
+        --color-sidebar: #a3ca66;
+        --color-extra: #8a8a8a;
+        --color-img: #38cb78;
+        --color-post: #eec9d7;
+        --color-footer: #f1a72b;
+      }
+    </style>
+  </head>
+  <body class="m-5">
+    <header
+      class="bg-header text-white font-bold h-20 flex justify-center items-center"
+    >
+      <span>Header</span>
+    </header>
+
+    <div class="flex gap-2 my-2">
+      <div class="flex flex-col gap-2 w-2/5">
+        <div class="bg-hero pt-3 text-white font-bold h-40 flex justify-center">
+          <span>Hero</span>
+        </div>
+        <div
+          class="bg-sidebar pt-3 text-white font-bold h-60 flex justify-center"
+        >
+          <span>Sidebar</span>
+        </div>
+      </div>
+      <div class="flex flex-col gap-2 w-3/5">
+        <div class="bg-main pt-3 text-white font-bold h-65 flex justify-center">
+          <span>Main Content</span>
+        </div>
+        <div
+          class="bg-extra pt-3 text-white font-bold h-35 flex justify-center"
+        >
+          <span>Extra Content</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex h-30 gap-2 my-2">
+      <div class="bg-img pt-3 text-white font-bold w-2/3 flex justify-center">
+        <span>Related Images</span>
+      </div>
+      <div class="bg-post pt-3 text-white font-bold w-1/3 flex justify-center">
+        <span>Related Posts</span>
+      </div>
+    </div>
+
+    <footer
+      class="bg-footer text-white font-bold h-20 flex justify-center items-center"
+    >
+      <span>Footer</span>
+    </footer>
+  </body>
+</html>
